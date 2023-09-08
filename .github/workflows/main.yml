@@ -178,7 +178,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key_path: F:\\Python_YP\\Dev\\Sprint_14\\vm_access\\yc-maximkmf34.pub
+        key_path: ${{ secrets.SSH_KEY_PATH }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         source: "docker-compose.production.yml"
         target: "taski"
@@ -187,7 +187,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key_path: ${{ secrets.SSH_KEY_PATH }}
+        key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         # Параметр script передаёт в action appleboy/ssh-action команды,
         # которые нужно выполнить на сервере, 
