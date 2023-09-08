@@ -178,7 +178,7 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
-        key_path: ${{ secrets.SSH_KEY_PATH }}
+        key_path: F:\\Python_YP\\Dev\\Sprint_14\\vm_access\\yc-maximkmf34.pub
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         source: "docker-compose.production.yml"
         target: "taski"
